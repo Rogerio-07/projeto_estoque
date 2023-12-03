@@ -1,6 +1,5 @@
-package SistemaEstoque;
+package Dados;
 	
-
 	public interface IProduto {
 
 		public void adicionar();

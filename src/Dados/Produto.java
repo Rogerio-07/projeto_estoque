@@ -1,15 +1,17 @@
-package SistemaEstoque;
+package Dados;
+import java.util.*;
 
 public class Produto {
 	
 		private int codigo, qtd ;
 		private double preco;
 		private String tipoProduto, descricao, fabricante;
+		private Produto[] lista;
 			
 		Produto(){	
 		}
 		
-		Produto(int codigo, int qtd, String descricao, double preco, String fabricante, String tipoProduto){
+		public Produto(int codigo, int qtd, String descricao, double preco, String fabricante, String tipoProduto){
 			
 			this.codigo = codigo;
 			this.descricao = descricao;
@@ -26,7 +28,6 @@ public class Produto {
 		public void setFabricante(String fabricante) {
 			this.fabricante = fabricante;
 		}
-
 
 		public int getCodigo() {
 			return codigo;
@@ -83,15 +84,19 @@ public class Produto {
 		public void setTipoProduto(String tipoProduto) {
 			this.tipoProduto = tipoProduto;
 		}
-		
+		//feijao tropa | preço: R$ 45.0 | estoque: 444 unidade(s) | Categoria: Alimenticio.
 		public String ToString() {
 		
-			return "Produto do tipo "+getTipoProduto()+", "+descricao+" da marca "+fabricante+", com preço unitário de R$ "+preco+", possui "+qtd+" unidade/s em estoque.";
+			return getDescricao()+" "+getFabricante()+" | Preço: R$ "+getPreco()+" | Estoque: "+getQtd()+" unidade(s) | Categoria: "+getTipoProduto()+"\n";
 		}
 		
-		public void tabelaInfo() {
-			String format = "%-10s | %-20s | %15s\n";
-			System.out.format(format,codigo,descricao,tipoProduto);
+		public void info() {
+			
+			System.out.format("%6s %10s %10s %16.2f %16s %18s\n",codigo,descricao,qtd,preco,fabricante,getTipoProduto());
 		}
-
-}
+		
+		}
+		
+					
+			   
+	        
