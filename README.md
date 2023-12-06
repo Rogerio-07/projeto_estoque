@@ -14,7 +14,7 @@
 # :hammer: Funcionalidades e Demonstração da Aplicação
 <h3> Package: Dados </h3>
 <p>
-Neste pacote teremos a classe Produto, que encapsula as propriedades e comportamentos relacionados a produtos. A classe é declarada como pública e possui os atributos privados código, quantidade, preço, tipo de produto, descrição e fabricante. Além disso também possui um array de objetos produto chamado de lista. Há um construtor padrão vazio e um construtor que aceita argumentos para inicializar os atributos da classe, além dos métodos getters e setters. O método 'getTipoProduto'converte o código do tipo de produto para uma descrição legível (por exemplo, "1" para "Alimentício"). O método 'ToString'retorna uma string formatada representando os detalhes do produto.E o método 'info' imprime informações formatadas do produto no console.
+Neste pacote teremos a classe Produto, que encapsula as propriedades e comportamentos relacionados a produtos. A classe é declarada como pública e possui os atributos privados código, quantidade, preço, tipo de produto, descrição e fabricante. Há um construtor padrão vazio e um construtor que aceita argumentos para inicializar os atributos da classe, além dos métodos getters e setters. O método 'getTipoProduto'converte o código do tipo de produto para uma descrição legível (por exemplo, "1" para "Alimentício"). O método 'ToString'retorna uma string formatada representando os detalhes do produto.E o método 'info' imprime informações formatadas do produto no console.
 </p>
 
 <h3> Package: Interface_usuario </h3>
