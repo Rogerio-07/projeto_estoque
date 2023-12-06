@@ -33,32 +33,10 @@ Neste pacote temos a classe pública SistemadeEstoque que mantém uma lista de p
 </p>
 
 # UML 
-Produto
--codigo :int
--quantidade :int
--preco :double
--descricao :String
--fabricante :String 
-#
-<<Interface>>
-+Adicionar (): void
-+Remover (): void
-+Pesquisar(): void
-#
-SistemadeEstoque
-Produto: ArrayList<Produto>
-+Adicionar (): void
-+Remover (): void
-+Pesquisar(): void
-+Relatorio(): void
-+ProdutoAlimenticio(): void
-+ProdutoBebida(): void
-+ProdutoLimpeza(): void
-+ProdutoHigiene():void
-#
-Execucao
-+comando: int
-+main
+![UML](https://github.com/Rogerio-07/projeto_estoque/assets/89558668/151bbb60-8d04-4eeb-895a-7bed690439b6)
+
+
+
 
 # Pessoas Desenvolvedoras do Projeto
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/89558668?v=4" width=115><br><sub>Ana Beatriz Lira</sub>](https://github.com/anabsl) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/150970636?v=4" width=115><br><sub>Lucineia Lima</sub>](https://github.com/LucineiaLima) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/138301226?v=4" width=115><br><sub>Luiz Henrique</sub>](https://github.com/Luizh92) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/130245094?v=4" width=115><br><sub>Rayane Kelly</sub>](https://github.com/Rayane-Souza) | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/146589409?v=4" width=115><br><sub>Rogério Melo</sub>](https://github.com/Rogerio-07) 
