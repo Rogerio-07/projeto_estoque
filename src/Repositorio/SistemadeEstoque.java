@@ -15,7 +15,7 @@ public class SistemadeEstoque implements IProduto {
 			
 			   System.out.println("Cadastro de Produto:");
 			
-			   System.out.println("Código: ");
+			   System.out.println("Codigo: ");
 			   int codigo = scan.nextInt();
 			   
 			   int a = 0;
@@ -24,16 +24,16 @@ public class SistemadeEstoque implements IProduto {
 				   if(p.getCodigo()!=codigo){
 					  
 				   }else {
-					   System.out.println("C�digo indiponivel, tente novamente!");
+					   System.out.println("Codigo indiponivel, tente novamente!");
 					   return;
 				   }
 			  a++; 
 		   }
 			   
-			   System.out.print("Descrição: ");
+			   System.out.print("Descri��o: ");
 			   String descricao = scan1.nextLine();
 
-			   System.out.print("Preço: ");
+			   System.out.print("Preco: ");
 			   double preco = scan.nextDouble();
 
 			   System.out.print("Quantidade: ");
@@ -52,7 +52,7 @@ public class SistemadeEstoque implements IProduto {
 		}				
 		@Override
 		public void remover() {
-			   System.out.println("Informe o código do produto que deseja remover ");
+			   System.out.println("Informe o codigo do produto que deseja remover ");
 			   Scanner scanner = new Scanner(System.in);
 			   int codigo = scanner.nextInt();
 			   int i = 0;
@@ -71,7 +71,7 @@ public class SistemadeEstoque implements IProduto {
 		public void pesquisar(){
 			   Scanner scanner = new Scanner(System.in);
 			   
-			   System.out.println("Informe o código do produto que deseja pesquisar ");
+			   System.out.println("Informe o codigo do produto que deseja pesquisar ");
 			   int codigo = scanner.nextInt();
 			   int i=0;
 			   
