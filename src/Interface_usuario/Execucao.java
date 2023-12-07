@@ -1,4 +1,4 @@
-package Intaface_usuario;
+package Interface_usuario;
 import java.util.*;
 
 import Repositorio.SistemadeEstoque;

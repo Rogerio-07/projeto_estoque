@@ -1,4 +1,4 @@
-package Dados;
+package Negocios;
 	
 	public interface IProduto {
 

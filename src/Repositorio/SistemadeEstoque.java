@@ -1,7 +1,6 @@
 package Repositorio;
 import java.util.*;
-
-import Dados.IProduto;
+import Negocios.IProduto;
 import Dados.Produto;
 
 
@@ -115,7 +114,6 @@ public class SistemadeEstoque implements IProduto {
 			System.out.printf("%6s %10s %10s %16s %16s %18s","codigo","Descricao","Qtd","Preço","Fabricante","Tipo Produto\n");
 			System.out.print("---------------------------------------------------------------------------------\n");
 			for(Produto lista: lista) {
-				//System.out.println(lista.tabelaInfo());
 					lista.info();
 		}
 		}
@@ -126,7 +124,6 @@ public class SistemadeEstoque implements IProduto {
 			System.out.print("---------------------------------------------------------------------------------\n");
 			for(Produto p: lista) {
 				if(p.getTipoProduto().equals("Alimenticio")) {
-				//System.out.println(p.ToString())
 					p.info();
 			}
 			}
@@ -138,7 +135,6 @@ public class SistemadeEstoque implements IProduto {
 			System.out.print("---------------------------------------------------------------------------------\n");
 					for(Produto p: lista) {
 						if(p.getTipoProduto().equals("Bebida")) {
-						//System.out.println(p.ToString());
 					p.info();
 		}				
 		}
@@ -149,7 +145,6 @@ public class SistemadeEstoque implements IProduto {
 			System.out.print("---------------------------------------------------------------------------------\n");
 			for(Produto p: lista) {
 				if(p.getTipoProduto().equals("Limpeza")) {
-				//System.out.println(p.ToString());
 					p.info();
 				}
 			}
@@ -160,7 +155,6 @@ public class SistemadeEstoque implements IProduto {
 			System.out.print("---------------------------------------------------------------------------------\n");
 			for(Produto p: lista) {
 				if(p.getTipoProduto().equals("Higiene")) {
-				//System.out.println(p.ToString());
 					p.info();
 				}
 			}
@@ -171,7 +165,6 @@ public class SistemadeEstoque implements IProduto {
 			System.out.print("---------------------------------------------------------------------------------\n");
 			for(Produto p: lista) {
 				if(p.getTipoProduto().equals("Diversos")) {
-				//System.out.println(p.ToString());
 				p.info();
 				}
 			}

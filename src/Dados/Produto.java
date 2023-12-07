@@ -6,7 +6,6 @@ public class Produto {
 		private int codigo, qtd ;
 		private double preco;
 		private String tipoProduto, descricao, fabricante;
-		private Produto[] lista;
 			
 		Produto(){	
 		}
@@ -84,7 +83,7 @@ public class Produto {
 		public void setTipoProduto(String tipoProduto) {
 			this.tipoProduto = tipoProduto;
 		}
-		//feijao tropa | preço: R$ 45.0 | estoque: 444 unidade(s) | Categoria: Alimenticio.
+
 		public String ToString() {
 		
 			return getDescricao()+" "+getFabricante()+" | Preço: R$ "+getPreco()+" | Estoque: "+getQtd()+" unidade(s) | Categoria: "+getTipoProduto()+"\n";
