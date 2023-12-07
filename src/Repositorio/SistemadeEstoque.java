@@ -18,6 +18,18 @@ public class SistemadeEstoque implements IProduto {
 			   System.out.println("CÃ³digo: ");
 			   int codigo = scan.nextInt();
 			   
+			   int a = 0;
+			   while(a<lista.size()) {
+				   Produto p = lista.get(a);
+				   if(p.getCodigo()!=codigo){
+					  
+				   }else {
+					   System.out.println("Código indiponivel, tente novamente!");
+					   return;
+				   }
+			  a++; 
+		   }
+			   
 			   System.out.print("DescriÃ§Ã£o: ");
 			   String descricao = scan1.nextLine();
 
@@ -92,22 +104,27 @@ public class SistemadeEstoque implements IProduto {
 					   		   int qtd2 = scanner.nextInt();
 					   		   total = p.getQtd()-qtd2; 
 					   		   p.setQtd(total);
-					   		   System.out.println("Quantidade Atualizada com sucesso!\nQuantidade Atual: "+total);
-						       return;
-						       
-						   	} else {
-							   System.out.println("opÃ§Ã£o invalida, digite 1 ou 2.");   
-						    }
-						   
-					       }if(alt==2) {
+					   		   
+					   		if(total>0){
+				   		   		System.out.println("Quantidade Atualizada com sucesso!\nQuantidade Atual: "+total);
+							    return;
+							   
+				   		   }else{
+							   	System.out.println("Quantidade insulficiente para remoção!");
+							   	return;
+						   }
+						 }
+					   }
+					   		     		   
+					   if(alt==2){
 						   return;
 					       }			
 				       }
-				   i++; 
-			   }
-			   		System.out.println("Produto nÃ£o encontrado.");
+				    		i++; 
+			   		}
+			   		System.out.println("Produto não encontrado.");
 			  
-			   }
+					}	   			   		 
 		
 			public void relatorioGeral() {
 			System.out.print("---------------------------------------------------------------------------------\n");
