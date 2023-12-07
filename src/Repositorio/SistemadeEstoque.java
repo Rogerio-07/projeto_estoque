@@ -30,7 +30,7 @@ public class SistemadeEstoque implements IProduto {
 			  a++; 
 		   }
 			   
-			   System.out.print("Descrição: ");
+			   System.out.print("DescriÃ§Ã£o: ");
 			   String descricao = scan1.nextLine();
 
 			   System.out.print("Preco: ");
@@ -63,9 +63,9 @@ public class SistemadeEstoque implements IProduto {
 				   return;
 			   }
 				   i++;
-				   }
+			}
 				   System.out.println("Produto nao existe");
-				}
+		}
 
 		@Override
 		public void pesquisar(){
@@ -101,18 +101,20 @@ public class SistemadeEstoque implements IProduto {
 						   
 						   if(alt2==2){
 					   		   System.out.println("informe a quantidade a remover: ");
-					   		   int qtd2 = scanner.nextInt();
-					   		   total = p.getQtd()-qtd2; 
+					   		   int qtd3 = scanner.nextInt();
+					   		   if(qtd3>p.getQtd()) {
+				   			   
+							   System.out.println("Quantidade insulficiente para remoÃ§Ã£o!");
+							   return;
+					   		   }
+					   		   total = p.getQtd()-qtd3; 
 					   		   p.setQtd(total);
 					   		   
-					   		if(total>0){
-				   		   		System.out.println("Quantidade Atualizada com sucesso!\nQuantidade Atual: "+total);
-							    return;
+					   	   if(total>0){
+					   		   System.out.println("Quantidade Atualizada com sucesso!\nQuantidade Atual: "+total);
+							   return;
 							   
-				   		   }else{
-							   	System.out.println("Quantidade insulficiente para remoção!");
-							   	return;
-						   }
+				   		   }
 						 }
 					   }
 					   		     		   
@@ -122,7 +124,7 @@ public class SistemadeEstoque implements IProduto {
 				       }
 				    		i++; 
 			   		}
-			   		System.out.println("Produto não encontrado.");
+			   		System.out.println("Produto nÃ£o encontrado.");
 			  
 					}	   			   		 
 		
@@ -132,7 +134,7 @@ public class SistemadeEstoque implements IProduto {
 			System.out.print("---------------------------------------------------------------------------------\n");
 			for(Produto lista: lista) {
 					lista.info();
-		}
+			}
 		}
 		
 		public void produtoAlimenticio() {
@@ -142,7 +144,7 @@ public class SistemadeEstoque implements IProduto {
 			for(Produto p: lista) {
 				if(p.getTipoProduto().equals("Alimenticio")) {
 					p.info();
-			}
+				}
 			}
 		}
 		
@@ -153,8 +155,8 @@ public class SistemadeEstoque implements IProduto {
 					for(Produto p: lista) {
 						if(p.getTipoProduto().equals("Bebida")) {
 					p.info();
-		}				
-		}
+				}				
+			}
 		}
 		public void produtoLimpeza() {
 			System.out.print("---------------------------------------------------------------------------------\n");
